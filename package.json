@@ -1,0 +1,33 @@
+{
+  "name": "user-list-backend",
+  "version": "1.0.0",
+  "description": "User List Back-End",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "author": "Dmitry Scheglov <Dmitry.Scheglov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "method-override": "^2.3.7"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "request": "^2.81.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DScheglov/user-list-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DScheglov/user-list-backend/issues"
+  },
+  "homepage": "https://github.com/DScheglov/user-list-backend#readme"
+}
