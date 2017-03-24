@@ -24,8 +24,13 @@ app.use ( controllers.error );
 app.use ( controllers.notSupported );
 
 if (module.parent == null) {
-  app.listen(8888, () => {
-    console.log('Express server is listening the port 8888')
+  let port = 8888;
+  if (process.argv.length > 2) {
+    port = parseInt(process.argv[2]);
+  }
+
+  app.listen(port, () => {
+    console.log(`Express server is listening the port ${port}`)
   });
 }
 
